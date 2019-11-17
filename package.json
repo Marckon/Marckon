@@ -2,6 +2,7 @@
   "name": "marckon",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://marckon.github.io/Marckon",
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.8",
@@ -16,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.0.2",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.19.1"
   }
 }
