@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Marckon/static/css/main.dfca195d.chunk.css",
+    "main.js": "/Marckon/static/js/main.df95e0f7.chunk.js",
+    "main.js.map": "/Marckon/static/js/main.df95e0f7.chunk.js.map",
+    "runtime-main.js": "/Marckon/static/js/runtime-main.43e54f30.js",
+    "runtime-main.js.map": "/Marckon/static/js/runtime-main.43e54f30.js.map",
+    "static/js/2.871f3899.chunk.js": "/Marckon/static/js/2.871f3899.chunk.js",
+    "static/js/2.871f3899.chunk.js.map": "/Marckon/static/js/2.871f3899.chunk.js.map",
+    "index.html": "/Marckon/index.html",
+    "precache-manifest.5338f5d38ba5d28ea1949a4bd836e216.js": "/Marckon/precache-manifest.5338f5d38ba5d28ea1949a4bd836e216.js",
+    "service-worker.js": "/Marckon/service-worker.js",
+    "static/css/main.dfca195d.chunk.css.map": "/Marckon/static/css/main.dfca195d.chunk.css.map",
+    "static/media/logo.svg": "/Marckon/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43e54f30.js",
+    "static/js/2.871f3899.chunk.js",
+    "static/css/main.dfca195d.chunk.css",
+    "static/js/main.df95e0f7.chunk.js"
+  ]
+}
