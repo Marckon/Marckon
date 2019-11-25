@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface UseScrollState {
   /* 窗口scroll bar的位置 */
@@ -16,16 +16,16 @@ export function useScroll(element?: HTMLElement): UseScrollState {
     windowLeft: 0,
   });
 
-  function scrollCb(e: Event) {
-    setPosition({
-      windowTop: window.scrollY,
-      windowLeft: window.scrollX,
-      elementTop: element ? element.getBoundingClientRect().top : undefined,
-      elementLeft: element ? element.getBoundingClientRect().left : undefined,
-    });
-  }
-
   useEffect(() => {
+    function scrollCb(e: Event) {
+      setPosition({
+        windowTop: window.scrollY,
+        windowLeft: window.scrollX,
+        elementTop: element ? element.getBoundingClientRect().top : undefined,
+        elementLeft: element ? element.getBoundingClientRect().left : undefined,
+      });
+    }
+
     document.addEventListener('scroll', scrollCb);
 
     return () => {

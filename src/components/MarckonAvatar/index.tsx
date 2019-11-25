@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) =>
     avatar: {
       width: '10vw',
       height: '10vw',
-      boxShadow: '0 0 0 5px rgba(0,0,0,0.65)',
+      boxShadow: '0 0 5px rgba(0,0,0,0.65)',
       borderRadius: '10vw',
       backgroundColor: '#fff',
     },
@@ -24,6 +24,7 @@ export const MarckonAvatar = (props: MarckonAvatarProps) => {
   const position = useScroll(avatarDOM.current || undefined);
   const classes = useStyles();
   const { isHide, dispatch } = useAvatarHide();
+  console.log(isHide)
 
   /* 滚动到64px（header高度）设置隐藏 */
   if (position.elementTop && position.elementTop <= 64 && !isHide) {
