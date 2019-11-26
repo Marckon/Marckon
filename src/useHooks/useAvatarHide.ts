@@ -1,27 +1,19 @@
-import { useReducer } from 'react';
+import { useState } from 'react';
+import { Subject } from 'rxjs';
 
-interface UseAvatarHideState {
-  isHide: boolean;
-}
+const subject = new Subject<boolean>();
 
-export enum AvatarReducerAction {
-  'Hide',
-  'Show',
-}
+export const useAvatarHide = (): { isHide: boolean; setHide: (isHide: boolean) => void } => {
+  const [state, setState] = useState(false);
 
-export function avatarReducer(state: UseAvatarHideState, action: AvatarReducerAction) {
-  switch (action) {
-    case AvatarReducerAction.Hide:
-      return { isHide: true };
-    case AvatarReducerAction.Show:
-      return { isHide: false };
-  }
-}
-
-export function useAvatarHide(): { isHide: boolean; dispatch: (action: AvatarReducerAction) => void } {
-  const [state, dispatch] = useReducer(avatarReducer, {
-    isHide: false,
+  subject.subscribe({
+    next: (isHide: boolean) => {
+      setState(isHide);
+    },
   });
 
-  return { isHide: state.isHide, dispatch };
-}
+  return {
+    isHide: state,
+    setHide: isHide => subject.next(isHide),
+  };
+};

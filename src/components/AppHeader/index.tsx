@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const AppHeader: React.FC = () => {
   const classes = useStyles();
-  const isAvatarHide = useAvatarHide();
-  console.log(isAvatarHide)
+  const { isHide } = useAvatarHide();
+  console.log('rxHide:', isHide);
 
   return (
     <AppBar position="static" className={classes.mainTransParent}>

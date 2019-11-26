@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useScroll } from '../../useHooks/useScroll';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { useAvatarHide, AvatarReducerAction } from '../../useHooks/useAvatarHide';
+import { useAvatarHide } from '../../useHooks/useAvatarHide';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,16 +23,15 @@ export const MarckonAvatar = (props: MarckonAvatarProps) => {
   const avatarDOM = useRef(null);
   const position = useScroll(avatarDOM.current || undefined);
   const classes = useStyles();
-  const { isHide, dispatch } = useAvatarHide();
-  console.log(isHide)
+  const { isHide, setHide } = useAvatarHide();
 
   /* 滚动到64px（header高度）设置隐藏 */
   if (position.elementTop && position.elementTop <= 64 && !isHide) {
-    dispatch(AvatarReducerAction.Hide);
+    setHide(true);
   }
 
   if (position.elementTop && position.elementTop > 64 && isHide) {
-    dispatch(AvatarReducerAction.Show);
+    setHide(false);
   }
   return <div className={`${classes.avatar} ${props.className}`} ref={avatarDOM}></div>;
 };
