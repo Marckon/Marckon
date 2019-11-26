@@ -6,8 +6,8 @@ import { PersonalCard } from './components/PersonalCard';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <PageBackGround />
       <AppHeader />
+      <PageBackGround />
       <PersonalCard />
     </div>
   );

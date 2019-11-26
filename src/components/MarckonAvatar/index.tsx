@@ -6,10 +6,14 @@ import { useAvatarHide } from '../../useHooks/useAvatarHide';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     avatar: {
-      width: '10vw',
-      height: '10vw',
-      boxShadow: '0 0 5px rgba(0,0,0,0.65)',
-      borderRadius: '10vw',
+      width: '30vw',
+      height: '30vw',
+      maxWidth: '160px',
+      maxHeight: '160px',
+      minHeight: '80px',
+      minWidth: '80px',
+      boxShadow: '0 0 30px rgba(0,0,0,0.65)',
+      borderRadius: '100%',
       backgroundColor: '#fff',
     },
   })

@@ -6,10 +6,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     personalCard: {
       width: '90vw',
-      height: '100vh',
-      margin: '35vh 5vw 0 5vw',
+      height: '50vh',
+      margin: '-15vh 5vw 0 5vw',
       backgroundColor: '#fff',
-      borderRadius: '6px',
+      borderRadius: '5vw',
       position: 'relative',
       boxShadow:
         '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);',

@@ -6,16 +6,13 @@ import { useScroll } from '../../useHooks/useScroll';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     pageBackGround: {
-      position: 'fixed',
-      top: 0,
-      bottom: 0,
-      left: 0,
-      right: 0,
-      zIndex: -1,
-    },
-    bgImage: {
-      height: '45vh',
+      height: '50vh',
       overflow: 'hidden',
+      zIndex: -1,
+      backgroundImage: `url(${bannerUrl})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      filter: 'blur(5px) blur(0px)',
     },
   })
 );
@@ -25,10 +22,9 @@ export const PageBackGround = () => {
   const positions = useScroll();
 
   return (
-    <div className={classes.pageBackGround}>
-      <div className={classes.bgImage} style={{ transform: `translate3d(0px, ${-positions.windowTop * 0.5}px, 0px)` }}>
-        <img src={bannerUrl} alt="" width="100%" />
-      </div>
-    </div>
+    <div
+      className={classes.pageBackGround}
+      style={{ transform: `translate3d(0px, ${-positions.windowTop * 0.5}px, 0px)` }}
+    />
   );
 };
