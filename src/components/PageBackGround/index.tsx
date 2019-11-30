@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundImage: `url(${bannerUrl})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      filter: 'blur(5px) blur(0px)',
     },
   })
 );

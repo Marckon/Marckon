@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
       boxShadow: '0 0 30px rgba(0,0,0,0.65)',
       borderRadius: '100%',
       backgroundColor: '#fff',
+      overflow: 'hidden',
     },
   })
 );
@@ -37,5 +38,9 @@ export const MarckonAvatar = (props: MarckonAvatarProps) => {
   if (position.elementTop && position.elementTop > 64 && isHide) {
     setHide(false);
   }
-  return <div className={`${classes.avatar} ${props.className}`} ref={avatarDOM}></div>;
+  return (
+    <div className={`${classes.avatar} ${props.className}`} ref={avatarDOM}>
+      <img src="https://avatars0.githubusercontent.com/u/24504081?s=460&v=4" width="100%" />
+    </div>
+  );
 };
