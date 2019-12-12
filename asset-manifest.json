@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Marckon/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Marckon/static/js/main.e5fa1268.chunk.js",
-    "main.js.map": "/Marckon/static/js/main.e5fa1268.chunk.js.map",
+    "main.js": "/Marckon/static/js/main.b9d0cedc.chunk.js",
+    "main.js.map": "/Marckon/static/js/main.b9d0cedc.chunk.js.map",
     "runtime-main.js": "/Marckon/static/js/runtime-main.43e54f30.js",
     "runtime-main.js.map": "/Marckon/static/js/runtime-main.43e54f30.js.map",
-    "static/js/2.5de4baf9.chunk.js": "/Marckon/static/js/2.5de4baf9.chunk.js",
-    "static/js/2.5de4baf9.chunk.js.map": "/Marckon/static/js/2.5de4baf9.chunk.js.map",
+    "static/js/2.25e5c845.chunk.js": "/Marckon/static/js/2.25e5c845.chunk.js",
+    "static/js/2.25e5c845.chunk.js.map": "/Marckon/static/js/2.25e5c845.chunk.js.map",
     "index.html": "/Marckon/index.html",
-    "precache-manifest.1fc125dd9ee7fc455e7f9f68de010878.js": "/Marckon/precache-manifest.1fc125dd9ee7fc455e7f9f68de010878.js",
+    "precache-manifest.9001f2d07c9c2eadded60009cdd46aa8.js": "/Marckon/precache-manifest.9001f2d07c9c2eadded60009cdd46aa8.js",
     "service-worker.js": "/Marckon/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/Marckon/static/css/main.5ecd60fb.chunk.css.map",
     "static/media/banner.jpg": "/Marckon/static/media/banner.0ec55d2a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.43e54f30.js",
-    "static/js/2.5de4baf9.chunk.js",
+    "static/js/2.25e5c845.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e5fa1268.chunk.js"
+    "static/js/main.b9d0cedc.chunk.js"
   ]
 }
