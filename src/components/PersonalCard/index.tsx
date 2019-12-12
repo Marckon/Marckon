@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import { MarckonAvatar } from '../MarckonAvatar';
+import { ParallaxBG } from '../ParallaxBG';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -29,6 +30,7 @@ export const PersonalCard = () => {
   return (
     <div className={classes.personalCard}>
       <MarckonAvatar className={classes.avatar} />
+      <ParallaxBG />
     </div>
   );
 };
