@@ -1,8 +1,9 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import bannerUrl from '../../banner.jpg';
 import { useScroll } from '../../useHooks/useScroll';
 
+const bannerUrl =
+  'https://cn.bing.com/th?id=OHR.ValleyForge_ZH-CN8129420249_768x1024.jpg&rf=LaDigue_1920x1080.jpg&pid=hp';
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     pageBackGround: {
